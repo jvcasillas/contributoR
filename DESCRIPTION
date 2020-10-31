@@ -7,7 +7,7 @@ Authors@R: c(
       comment = c(ORCID = "0000-0001-8735-9910")))
 Maintainer: Joseph V. Casillas <joseph.casillas@rutgers.edu>
 Description: The goal of contributoR is to facilitate the documentation of 
-    scholary contributions. This package uses the CRediT taxonomy to define 
+    scholarly contributions. This package uses the CRediT taxonomy to define 
     contributor roles. 
 URL: https://github.com/jvcasillas/contributoR
 BugReports: https://github.com/jvcasillas/academicWriteR/issues
