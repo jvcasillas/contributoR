@@ -33,7 +33,7 @@ ex_1 <- list(
 contributor(contributions = ex_1)
 ```
 
-![](README_files/figure-gfm/example1-1.png)<!-- -->
+<img src="README_files/figure-gfm/example1-1.png" width="672" />
 
 ``` r
 # Build list inside function
@@ -46,4 +46,4 @@ contributor(
    )
 ```
 
-![](README_files/figure-gfm/example1-2.png)<!-- -->
+<img src="README_files/figure-gfm/example1-2.png" width="672" />

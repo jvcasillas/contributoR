@@ -28,7 +28,7 @@ devtools::install_github("jvcasillas/contributoR")
 
 ### Usage
 
-```{r, example1}
+```{r, example1, fig.retina=2}
 library("contributoR")
 
 # Create example list
