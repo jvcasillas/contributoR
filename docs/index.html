@@ -72,11 +72,29 @@
 <h2 class="hasAnchor">
 <a href="#contributor" class="anchor"></a>contributoR</h2>
 <p>An R package for documenting scholarly contributions.</p>
-<p>Last update: 2020-10-30</p>
+<p>Last update: 2020-10-31</p>
 <div id="overview" class="section level3">
 <h3 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h3>
-<p>The goal of contributoR is to facilitate the documentation of scholarly contributions. This package uses the CRediT taxonomy to define contributor roles.</p>
+<p>The goal of contributoR is to facilitate the documentation of scholarly contributions. This package uses <a href="https://casrai.org/credit/">CRediT</a> (Contributor Roles Taxonomy) to visualize contributor roles.</p>
+<p>Specifically, CRediT is a “high-level taxonomy, including 14 roles, that can be used to represent the roles typically played by contributors to scientific scholarly output. The roles describe each contributor’s specific contribution to the scholarly output” (see website for more details: <a href="https://casrai.org/credit/" class="uri">https://casrai.org/credit/</a>).</p>
+<p>There are 14 roles, which are defined as follows:</p>
+<ol>
+<li>Conceptualization: Ideas; formulation or evolution of overarching research goals and aims.</li>
+<li>Data curation: Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use.</li>
+<li>Formal analysis: Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.</li>
+<li>Funding acquisition: Acquisition of the financial support for the project leading to this publication.</li>
+<li>Investigation: Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.</li>
+<li>Methodology: Development or design of methodology; creation of models.</li>
+<li>Project administration – Management and coordination responsibility for the research activity planning and execution.</li>
+<li>Resources: Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.</li>
+<li>Software: Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.</li>
+<li>Supervision: Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.</li>
+<li>Validation: Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.</li>
+<li>Visualization: Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.</li>
+<li>Writing – original draft: Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).</li>
+<li>Writing – review &amp; editing: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.</li>
+</ol>
 </div>
 <div id="installation" class="section level3">
 <h3 class="hasAnchor">
@@ -88,6 +106,7 @@
 <div id="usage" class="section level3">
 <h3 class="hasAnchor">
 <a href="#usage" class="anchor"></a>Usage</h3>
+<p>To create a <code>CRediT</code> visualization you need to use the <code>contributor</code> function. This function takes a single argument, a list, which assigns any of the 14 contributor roles to an individual. In other words, the name of the list element is the name of the contributor and any numbers included for that individual correspond with 1-14 in the list of roles. For example…</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/jvcasillas/contributoR">"contributoR"</a></span><span class="op">)</span>
 
@@ -107,6 +126,7 @@
    <span class="st">"Author 1"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">14</span>, by <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>,
    <span class="st">"Author 2"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">9</span>, <span class="fl">13</span><span class="op">)</span>,
    <span class="st">"Lazy person"</span> <span class="op">=</span> <span class="cn">NA</span>,
+   <span class="st">"Author 3"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">14</span><span class="op">)</span>, 
    <span class="st">"Advisor"</span> <span class="op">=</span> <span class="fl">12</span><span class="op">)</span>
    <span class="op">)</span></pre></div>
 <p><img src="README_files/figure-gfm/example1-2.png" width="672"></p>

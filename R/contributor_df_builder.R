@@ -33,11 +33,11 @@ contributor_df_builder <- function(contributions = NULL) {
 
   # Vector of contributor roles
   contributor_roles <- c(
-  "Conceptualization", "Methodology", "Software", "Validation",
-  "Formal analysis", "Investigation", "Resources", "Data curation",
-  "Writing - original draft preparation", "Writing - review and editing",
-  "Visualization", "Supervision", "Project Administration",
-  "Funding acquisition"
+    "Conceptualization", "Data curation", "Formal Analysis",
+    "Funding acquisition", "Investigation", "Methodology",
+    "Project administration", "Resources", "Software", "Supervision",
+    "Validation", "Visualization", "Writing - original draft",
+    "Writing - review & editing"
   )
 
   # Make sure list includes integer or numeric vectors
