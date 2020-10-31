@@ -53,7 +53,7 @@ This function takes a single argument, a list, which assigns any of the 14 contr
 In other words, the name of the list element is the name of the contributor and any numbers included for that individual correspond with 1-14 in the list of roles. 
 For example...
 
-```{r, example1, fig.retina=2}
+```{r, example1, fig.retina=2, eval=F}
 library("contributoR")
 
 # Create example list
@@ -64,7 +64,13 @@ ex_1 <- list(
 
 # Plot contributions
 contributor(contributions = ex_1)
+```
 
+<img src="README_files/figure-gfm/example1-1.png" width="672" />
+
+You can also build the list directly inside the `contributor` function. 
+
+```{r, example2, fig.retina=2, eval=F}
 # Build list inside function
 contributor(
  contributions = list(
@@ -75,3 +81,5 @@ contributor(
    "Advisor" = 12)
    )
 ```
+
+<img src="README_files/figure-gfm/example1-2.png" width="672" />
