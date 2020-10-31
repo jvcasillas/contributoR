@@ -88,7 +88,7 @@ ex_1 <- list(
 contributor(contributions = ex_1)
 ```
 
-<img src="README_files/figure-gfm/example1-1.png" width="1344" />
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-1.png' align='center' width='800px'/>
 
 You can also build the list directly inside the `contributor` function.
 
@@ -104,4 +104,4 @@ contributor(
    )
 ```
 
-<img src="README_files/figure-gfm/example1-2.png" width="1344" />
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-2.png' align='center' width='800px'/>
