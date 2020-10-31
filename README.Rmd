@@ -66,7 +66,9 @@ ex_1 <- list(
 contributor(contributions = ex_1)
 ```
 
-<img src="README_files/figure-gfm/example1-1.png" width="672" />
+```{r, plot-img-1, echo=F}
+knitr::include_graphics("README_files/figure-gfm/example1-1.png")
+```
 
 You can also build the list directly inside the `contributor` function. 
 
@@ -82,4 +84,6 @@ contributor(
    )
 ```
 
-<img src="README_files/figure-gfm/example1-2.png" width="672" />
+```{r, plot-img-2, echo=F}
+knitr::include_graphics("README_files/figure-gfm/example1-2.png")
+```
