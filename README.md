@@ -104,7 +104,7 @@ contributor(
    )
 ```
 
-<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-2.png' align='center' width='800px'/>
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example2-1.png' align='center' width='800px'/>
 
 ### Experimental
 
@@ -118,13 +118,13 @@ contributions <- list(
   p3 = tibble::tibble(role = 1:3, weight = "high"),
   p4 = tibble::tibble(role = 5:12, weight = rep(c("low", "high"), times = 4)))
 
-contributoR::contributor(contributions, weight = T, option = "C", begin = 0.4, end = 0.9)
+contributor(contributions, weight = T, option = "C", begin = 0.4, end = 0.9)
 ```
-
-<img src="README_files/figure-gfm/example3-1.png" width="672" />
 
 If weights are included, the plot generates points that differ in color
 based on the number of weights specified in the list. By default
 `contributor` uses the `viridis` color palettes for discrete variables,
 thus it is possible to include arguments like `option`, `begin`, and
 `end` to customize the point colors.
+
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example3-1.png' align='center' width='800px'/>

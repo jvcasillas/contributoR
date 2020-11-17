@@ -144,7 +144,7 @@
    <span class="st">"Author 3"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">14</span><span class="op">)</span>, 
    <span class="st">"Advisor"</span> <span class="op">=</span> <span class="fl">12</span><span class="op">)</span>
    <span class="op">)</span></code></pre></div>
-<p><img src="https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-2.png" align="center" width="800px"></p>
+<p><img src="https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example2-1.png" align="center" width="800px"></p>
 </div>
 <div id="experimental" class="section level3">
 <h3 class="hasAnchor">
@@ -157,9 +157,9 @@
   p3 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, weight <span class="op">=</span> <span class="st">"high"</span><span class="op">)</span>,
   p4 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">5</span><span class="op">:</span><span class="fl">12</span>, weight <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"high"</span><span class="op">)</span>, times <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 
-<span class="fu">contributoR</span><span class="fu">::</span><span class="fu"><a href="reference/contributor.html">contributor</a></span><span class="op">(</span><span class="va">contributions</span>, weight <span class="op">=</span> <span class="cn">T</span>, option <span class="op">=</span> <span class="st">"C"</span>, begin <span class="op">=</span> <span class="fl">0.4</span>, end <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span></code></pre></div>
-<p><img src="README_files/figure-gfm/example3-1.png" width="672"></p>
+<span class="fu"><a href="reference/contributor.html">contributor</a></span><span class="op">(</span><span class="va">contributions</span>, weight <span class="op">=</span> <span class="cn">T</span>, option <span class="op">=</span> <span class="st">"C"</span>, begin <span class="op">=</span> <span class="fl">0.4</span>, end <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span></code></pre></div>
 <p>If weights are included, the plot generates points that differ in color based on the number of weights specified in the list. By default <code>contributor</code> uses the <code>viridis</code> color palettes for discrete variables, thus it is possible to include arguments like <code>option</code>, <code>begin</code>, and <code>end</code> to customize the point colors.</p>
+<p><img src="https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example3-1.png" align="center" width="800px"></p>
 </div>
 </div>
   </div>
