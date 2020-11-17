@@ -1,7 +1,7 @@
 Package: contributoR
 Type: Package
 Title: A package for documenting scholarly contributions
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person("Joseph Vincent", "Casillas", , "joseph.casillas@rutgers.edu", role = c("aut", "cre"), 
       comment = c(ORCID = "0000-0001-8735-9910")))

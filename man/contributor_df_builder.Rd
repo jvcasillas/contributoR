@@ -4,21 +4,22 @@
 \alias{contributor_df_builder}
 \title{Build contributor dataframe}
 \usage{
-contributor_df_builder(contributions = NULL)
+contributor_df_builder(contributions = NULL, weight = FALSE, ...)
 }
 \arguments{
 \item{contributions}{A list object (defaults to NULL)}
+
+\item{weight}{(logical) Variable indicating whether or not to include
+contribution weighting in the dataframe. Defaults to FALSE.}
+
+\item{...}{Pass extra parameters}
 }
 \description{
 This function takes a list and generates a dataframe that can be sent to
 the contributor plotting function
 }
 \examples{
-ex_vec <- c("JVC", "JGP", "NR")
-ex_0 <- list(
- "JVC",
- "JGP",
- "NR")
+# A list containing named vectors
 ex_1 <- list(
  JVC = 1:13,
  JGP = 1,
@@ -26,5 +27,15 @@ ex_1 <- list(
 
 # Simple example
 contributor_df_builder(ex_1)
+
+# A list containing tibbles with 'role' and 'weight' defined
+ex_2 <- list(
+ p1 = tibble::tibble(role = 1:3, weight = "low"),
+ p2 = tibble::tibble(role = 3:8, weight = "high"),
+ p3 = tibble::tibble(role = 1:3, weight = "high"),
+ p4 = tibble::tibble(role = 5:12, weight = rep(c("low", "high"), times = 4)))
+
+# Example with weights
+contributor_df_builder(ex_2, weight = TRUE)
 }
 \keyword{dataframe}
