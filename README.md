@@ -88,8 +88,6 @@ ex_1 <- list(
 contributor(contributions = ex_1)
 ```
 
-<img src="README_files/figure-gfm/example1-1.png" width="672" />
-
 <img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-1.png' align='center' width='800px'/>
 
 You can also build the list directly inside the `contributor` function.
@@ -106,9 +104,7 @@ contributor(
    )
 ```
 
-<img src="README_files/figure-gfm/example2-1.png" width="672" />
-
-<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-2.png' align='center' width='800px'/>
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example2-1.png' align='center' width='800px'/>
 
 ### Experimental
 
@@ -124,8 +120,6 @@ contributions <- list(
 
 contributor(contributions, weight = T, option = "C", begin = 0.4, end = 0.9)
 ```
-
-<img src="README_files/figure-gfm/example3-1.png" width="672" />
 
 If weights are included, the plot generates points that differ in color
 based on the number of weights specified in the list. By default
