@@ -4,23 +4,28 @@
 \alias{contributor}
 \title{Build contributor plot}
 \usage{
-contributor(contributions = NULL)
+contributor(contributions = NULL, weight = FALSE, ...)
 }
 \arguments{
 \item{contributions}{A list object (defaults to NULL)}
+
+\item{weight}{(logical) Variable indicating whether or not to include
+contribution weighting in the dataframe. Defaults to FALSE.}
+
+\item{...}{Pass extra parameters}
 }
 \description{
 This function takes a list and generates a contributions plot.
 }
 \examples{
-# Create example list
+# A list containing named vectors
 ex_1 <- list(
  JVC = 1:13,
  JGP = 1,
  NR  = c(2, 4))
 
-# Plot contributions
-contributor(contributions = ex_1)
+# Simple example
+contributor(ex_1)
 
 # Build list inside function
 contributor(
@@ -30,5 +35,20 @@ contributor(
   "Lazy person" = NA,
   "Advisor" = 12)
   )
+
+# A list containing tibbles with 'role' and 'weight' defined
+ex_2 <- list(
+ p1 = tibble::tibble(role = 1:3, weight = "low"),
+ p2 = tibble::tibble(role = 3:8, weight = "high"),
+ p3 = tibble::tibble(role = 1:3, weight = "high"),
+ p4 = tibble::tibble(role = 5:12, weight = rep(c("low", "high"), times = 4)))
+
+# Example with weights
+contributor(ex_2, weight = TRUE)
+
+# The contributor function defaults to viridis colors if weight = TRUE.
+# You can select which option and where the colors begin/end using
+# 'option', 'begin', and 'end' arguments.
+contributor(ex_2, weight = TRUE, begin = 0.4, end = 0.9)
 }
 \keyword{plot}
