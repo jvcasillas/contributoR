@@ -84,7 +84,7 @@ contributor(
    )
 ```
 
-<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example1-2.png' align='center' width='800px'/>
+<img src='https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example2-1.png' align='center' width='800px'/>
 
 ### Experimental
 
