@@ -3,7 +3,7 @@
 
 An R package for documenting scholarly contributions.
 
-Last update: 2020-11-17
+Last update: 2021-12-18
 
 ### Overview
 

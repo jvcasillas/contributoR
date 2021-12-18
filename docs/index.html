@@ -21,6 +21,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -33,26 +35,20 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">contributoR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.3.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/jvcasillas/contributoR/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/jvcasillas/contributoR/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -68,18 +64,18 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="contributor" class="section level2">
-<h2 class="hasAnchor">
-<a href="#contributor" class="anchor"></a>contributoR</h2>
+<div class="section level2">
+<h2 id="contributor">contributoR<a class="anchor" aria-label="anchor" href="#contributor"></a>
+</h2>
 <p>An R package for documenting scholarly contributions.</p>
-<p>Last update: 2020-11-17</p>
-<div id="overview" class="section level3">
-<h3 class="hasAnchor">
-<a href="#overview" class="anchor"></a>Overview</h3>
-<p>The goal of contributoR is to facilitate the documentation of scholarly contributions. This package uses <a href="https://casrai.org/credit/">CRediT</a> (Contributor Roles Taxonomy) to visualize contributor roles.</p>
-<p>Specifically, CRediT is a “high-level taxonomy, including 14 roles, that can be used to represent the roles typically played by contributors to scientific scholarly output. The roles describe each contributor’s specific contribution to the scholarly output” (see website for more details: <a href="https://casrai.org/credit/" class="uri">https://casrai.org/credit/</a>).</p>
+<p>Last update: 2021-12-18</p>
+<div class="section level3">
+<h3 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
+</h3>
+<p>The goal of contributoR is to facilitate the documentation of scholarly contributions. This package uses <a href="https://casrai.org/credit/" class="external-link">CRediT</a> (Contributor Roles Taxonomy) to visualize contributor roles.</p>
+<p>Specifically, CRediT is a “high-level taxonomy, including 14 roles, that can be used to represent the roles typically played by contributors to scientific scholarly output. The roles describe each contributor’s specific contribution to the scholarly output” (see website for more details: <a href="https://casrai.org/credit/" class="external-link uri">https://casrai.org/credit/</a>).</p>
 <p>There are 14 roles, which are defined as follows:</p>
-<ol>
+<ol style="list-style-type: decimal">
 <li>
 <strong>Conceptualization</strong>: Ideas; formulation or evolution of overarching research goals and aims.</li>
 <li>
@@ -110,25 +106,25 @@
 <strong>Writing – review &amp; editing</strong>: Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision – including pre- or post-publication stages.</li>
 </ol>
 </div>
-<div id="installation" class="section level3">
-<h3 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h3>
+<div class="section level3">
+<h3 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h3>
 <p>You can install the development version from GitHub with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">"devtools"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2"></a>devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">"jvcasillas/contributoR"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"devtools"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"jvcasillas/contributoR"</span>)</span></code></pre></div>
 </div>
-<div id="usage" class="section level3">
-<h3 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h3>
+<div class="section level3">
+<h3 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h3>
 <p>To create a <code>CRediT</code> visualization you need to use the <code>contributor</code> function. This function takes a single argument, a list, which assigns any of the 14 contributor roles to an individual. In other words, the name of the list element is the name of the contributor and any numbers included for that individual correspond with 1-14 in the list of roles. For example…</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/jvcasillas/contributoR">"contributoR"</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/jvcasillas/contributoR" class="external-link">"contributoR"</a></span><span class="op">)</span>
 
 <span class="co"># Create example list</span>
-<span class="va">ex_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
+<span class="va">ex_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
  JVC <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">13</span>,
  JGP <span class="op">=</span> <span class="fl">1</span>,
- NR  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span><span class="op">)</span><span class="op">)</span>
+ NR  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span><span class="op">)</span><span class="op">)</span>
 
 <span class="co"># Plot contributions</span>
 <span class="fu"><a href="reference/contributor.html">contributor</a></span><span class="op">(</span>contributions <span class="op">=</span> <span class="va">ex_1</span><span class="op">)</span></code></pre></div>
@@ -137,25 +133,25 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Build list inside function</span>
 <span class="fu"><a href="reference/contributor.html">contributor</a></span><span class="op">(</span>
- contributions <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
-   <span class="st">"Author 1"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html">seq</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">14</span>, by <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>,
-   <span class="st">"Author 2"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">9</span>, <span class="fl">13</span><span class="op">)</span>,
+ contributions <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
+   <span class="st">"Author 1"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">14</span>, by <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>,
+   <span class="st">"Author 2"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">9</span>, <span class="fl">13</span><span class="op">)</span>,
    <span class="st">"Lazy person"</span> <span class="op">=</span> <span class="cn">NA</span>,
-   <span class="st">"Author 3"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">14</span><span class="op">)</span>, 
+   <span class="st">"Author 3"</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">14</span><span class="op">)</span>, 
    <span class="st">"Advisor"</span> <span class="op">=</span> <span class="fl">12</span><span class="op">)</span>
    <span class="op">)</span></code></pre></div>
 <p><img src="https://raw.githubusercontent.com/jvcasillas/contributoR/master/README_files/figure-gfm/example2-1.png" align="center" width="800px"></p>
 </div>
-<div id="experimental" class="section level3">
-<h3 class="hasAnchor">
-<a href="#experimental" class="anchor"></a>Experimental</h3>
+<div class="section level3">
+<h3 id="experimental">Experimental<a class="anchor" aria-label="anchor" href="#experimental"></a>
+</h3>
 <p>It is also possible to qualify <em>how much</em> one contributes by adding <code>weight</code> to the list. For example:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">contributions</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>
-  p1 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, weight <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"med"</span>, <span class="st">"high"</span><span class="op">)</span><span class="op">)</span>,
-  p2 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">3</span><span class="op">:</span><span class="fl">8</span>, weight <span class="op">=</span> <span class="st">"high"</span><span class="op">)</span>,
-  p3 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, weight <span class="op">=</span> <span class="st">"high"</span><span class="op">)</span>,
-  p4 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">5</span><span class="op">:</span><span class="fl">12</span>, weight <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"high"</span><span class="op">)</span>, times <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
+<code class="sourceCode R"><span class="va">contributions</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
+  p1 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, weight <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"med"</span>, <span class="st">"high"</span><span class="op">)</span><span class="op">)</span>,
+  p2 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">3</span><span class="op">:</span><span class="fl">8</span>, weight <span class="op">=</span> <span class="st">"high"</span><span class="op">)</span>,
+  p3 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>, weight <span class="op">=</span> <span class="st">"high"</span><span class="op">)</span>,
+  p4 <span class="op">=</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>role <span class="op">=</span> <span class="fl">5</span><span class="op">:</span><span class="fl">12</span>, weight <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"low"</span>, <span class="st">"high"</span><span class="op">)</span>, times <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
 
 <span class="fu"><a href="reference/contributor.html">contributor</a></span><span class="op">(</span><span class="va">contributions</span>, weight <span class="op">=</span> <span class="cn">T</span>, option <span class="op">=</span> <span class="st">"C"</span>, begin <span class="op">=</span> <span class="fl">0.4</span>, end <span class="op">=</span> <span class="fl">0.9</span><span class="op">)</span></code></pre></div>
 <p>If weights are included, the plot generates points that differ in color based on the number of weights specified in the list. By default <code>contributor</code> uses the <code>viridis</code> color palettes for discrete variables, thus it is possible to include arguments like <code>option</code>, <code>begin</code>, and <code>end</code> to customize the point colors.</p>
@@ -166,39 +162,51 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/jvcasillas/contributoR/">https://​github.com/​jvcasillas/​contributoR/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/jvcasillas/contributoR/issues">https://​github.com/​jvcasillas/​contributoR/​issues</a>
-</li>
+<li><a href="https://github.com/jvcasillas/contributoR/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/jvcasillas/contributoR/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a>
+<a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a>
 </li>
 </ul>
 </div>
-<div class="developers">
-<h2>Developers</h2>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li>Joseph Vincent Casillas <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8735-9910" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="authors.html#citation">Citing contributoR</a></li>
 </ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Joseph Vincent Casillas <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-8735-9910" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+</ul>
+</div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Joseph Vincent Casillas.</p>
+  <p></p>
+<p>Developed by Joseph Vincent Casillas.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -206,6 +214,8 @@
 
   
 
+
+  
 
   </body>
 </html>
