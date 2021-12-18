@@ -103,7 +103,8 @@ contributor_df_builder <- function(contributions = NULL, weight = FALSE, ...) {
     df_out <- left_join(df_out, rename(unnested_hold, order_y = .data$role),
       by = c("contributors", "order_y")) %>%
     select(.data$contributors, .data$contributor_roles, .data$val,
-      weight = .data$weight.y, .data$order_x, .data$order_y)
+      weight = .data$weight.y, .data$order_x, .data$order_y) %>%
+    mutate(contributors = fct_reorder(.data$contributors, .data$order_x, min))
   }
 
   return(df_out)
