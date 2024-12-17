@@ -1,7 +1,7 @@
 Package: contributoR
 Type: Package
 Title: A package for documenting scholarly contributions
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: c(
     person("Joseph Vincent", "Casillas", , "joseph.casillas@rutgers.edu", role = c("aut", "cre"), 
       comment = c(ORCID = "0000-0001-8735-9910")))
@@ -19,6 +19,8 @@ Imports:
     forcats, 
     ggplot2, 
     dplyr, 
+    glue,
+    stringr,
     rlang
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2

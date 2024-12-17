@@ -1,27 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/calculate_contributions.html</loc>
-  </url>
-  <url>
-    <loc>/reference/contributor.html</loc>
-  </url>
-  <url>
-    <loc>/reference/contributor_df_builder.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE-text.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/calculate_contributions.html</loc></url>
+<url><loc>/reference/contribution_to_text.html</loc></url>
+<url><loc>/reference/contributor.html</loc></url>
+<url><loc>/reference/contributor_df_builder.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
 </urlset>
+
